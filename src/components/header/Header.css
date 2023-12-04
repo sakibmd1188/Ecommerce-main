@@ -1,0 +1,233 @@
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.header_nav {
+  display: flex !important;
+  justify-content: center;
+  background: #f4f4f4;
+}
+.containerr {
+  width: 90%;
+  /* position: relative; */
+  padding: 16px 0px 16px 0px;
+}
+.header_nav_container {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+.header_nav_options {
+  display: flex !important;
+  justify-content: space-between;
+  width: 239px;
+}
+.header_top {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  display: flex !important;
+  justify-content: center;
+}
+.header_top_container {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+.row1 {
+  flex: 1;
+}
+.row2 {
+  flex: 2;
+  display: flex !important;
+  justify-content: space-between;
+  align-items:center;
+}
+.search {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.search_input {
+  border: none;
+  outline: none;
+}
+.iconss1 {
+  align-items: center;
+  font-size: 25px;
+}
+.iconss2 {
+  width: 400px;
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+}
+.notifyName {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.notification {
+  color: white;
+  background-color: #489799;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+  bject-fit:center;
+}
+
+.header_bottom {
+  background: #3a9ea1;
+}
+.header_bottom_container {
+  width: 100%;
+  display: flex !important;
+}
+.header_bottom_links {
+  display: flex !important;
+  justify-content: space-between;
+  width: 350px;
+  margin-left: 80px;
+}
+.flex_cartPop {
+  display: flex !important;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.link {
+  color: white;
+}
+
+/* ----------- */
+.popup_search_main {
+  width: 30%;
+  overflow-y: scroll;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  height: 300px;
+  z-index: 9999;
+}
+.popup_cart_main {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  z-index: 9999;
+  background-color: white;
+  border-bottom: 2px solid #369599;
+  border-top: 1px solid lightgray;
+}
+.popup_cart {
+  overflow-y: scroll;
+  height: 240px;
+}
+.cart_img_hover {
+  cursor: pointer;
+  width: 80px;
+  height: 90px;
+}
+.popup_item {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 18px;
+}
+.popup_descp {
+  font-size: 15px;
+  width: 50%;
+}
+.popup_img {
+  position: relative;
+}
+.popup_count {
+  position: absolute;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #46a3a7;
+  font-size: 15px;
+}
+.btn_cart {
+  background-color: black;
+  color: white;
+  outline: none;
+  width: 250px;
+  height: 50px;
+  border: none;
+}
+.btn_cart:hover {
+  background-color: #369599;
+}
+@media screen and (max-width: 600px) {
+  .header_top_container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row2 {
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .header_nav_container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup_cart_main {
+    top: 220px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 860px) {
+  .popup_cart_main {
+    top: 200px;
+  }
+  .header_nav_container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_top_container {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row2 {
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search {
+    width: 100%;
+    flex: 0;
+    display: flex !important;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  .search_input {
+    border: none;
+  }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-width: 960px) {
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}

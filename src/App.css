@@ -1,0 +1,7 @@
+.app_main {
+  position: relative;
+}
+.flexCol {
+  display: flex !important;
+  flex-direction: column;
+}
